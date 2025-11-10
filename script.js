@@ -337,3 +337,36 @@ function createParticles() {
 }
 
 createParticles();
+
+
+
+function openCertificate(certId) {
+    const modal = document.getElementById('projectModal');
+    const modalBody = document.getElementById('modalBody');
+    
+    let content = '';
+    if (certId === 'sql') {
+        content = `
+            <h2 style="color: var(--primary-color); margin-bottom: 1rem;">Microsoft SQL Certification</h2>
+            <iframe src="assets/certificates/intellipaat-certificate.pdf" 
+                    width="100%" height="600px" 
+                    style="border:none; border-radius:10px;"></iframe>`;
+    } else if (certId === 'ai_ml') {
+        content = `
+            <h2 style="color: var(--primary-color); margin-bottom: 1rem;">Fundamentals in AI & ML</h2>
+            <img src="assets/certificates/vityarth-9b78f4a5af.png" 
+                 alt="AI & ML Certificate" 
+                 style="width:100%; border-radius:10px;">`;
+    } else if (certId === 'python') {
+        content = `
+            <h2 style="color: var(--primary-color); margin-bottom: 1rem;">Python Essentials</h2>
+            <img src="assets/certificates/vityarth-d878fcf4b7.png" 
+                 alt="Python Certificate" 
+                 style="width:100%; border-radius:10px;">`;
+    }
+
+    modalBody.innerHTML = content;
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+

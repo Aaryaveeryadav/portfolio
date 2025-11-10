@@ -1231,3 +1231,22 @@ body {
         transform: translateY(0);
     }
 }
+
+/* === Certificate Hover Fix === */
+.project-image .project-icon {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.project-card:hover .project-icon {
+  opacity: 0;
+  transform: scale(0.7);
+}
+
+.project-overlay {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
