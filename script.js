@@ -15,6 +15,11 @@ function initThemeToggle() {
     html.setAttribute('data-theme', currentTheme);
     updateThemeIcon(currentTheme);
     
+    window.addEventListener('scroll', () => {
+  const themeToggle = document.getElementById('themeToggle');
+  themeToggle.style.zIndex = '1300'; // keeps toggle always on top while scrolling
+});
+
     themeToggle.addEventListener('click', () => {
         const currentTheme = html.getAttribute('data-theme');
         const newTheme = currentTheme === 'light' ? 'dark' : 'light';
@@ -49,6 +54,21 @@ function initNavigation() {
         navMenu.classList.toggle('active');
         navToggle.classList.toggle('active');
     });
+
+    // inside initNavigation() after navToggle click event
+navToggle.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+  navToggle.classList.toggle('active');
+
+  // ensure theme toggle stays visible
+  const themeToggle = document.getElementById('themeToggle');
+  if (navMenu.classList.contains('active')) {
+    themeToggle.style.zIndex = '900';
+  } else {
+    themeToggle.style.zIndex = '1300';
+  }
+});
+
     
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {

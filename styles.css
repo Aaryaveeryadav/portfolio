@@ -1308,3 +1308,156 @@ body {
   opacity: 1;
 }
 
+/* === Responsive Fix for Navbar and Theme Toggle === */
+@media (max-width: 968px) {
+  .navbar {
+    z-index: 1200; /* keep navbar above theme toggle */
+  }
+
+  .theme-toggle {
+    position: absolute;
+    top: 15px;
+    right: 60px; /* move slightly left to make space for nav toggle */
+    width: 40px;
+    height: 40px;
+    z-index: 1300;
+  }
+
+  .nav-toggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1300;
+  }
+
+  .nav-container {
+    position: relative;
+  }
+
+  /* Fix for dark theme overlapping */
+  [data-theme="dark"] .theme-toggle {
+    background: var(--card-bg);
+    border: 2px solid var(--border-color);
+  }
+}
+
+/* Extra small screen adjustments */
+@media (max-width: 640px) {
+  .theme-toggle {
+    top: 10px;
+    right: 55px;
+    width: 38px;
+    height: 38px;
+  }
+
+  .nav-toggle {
+    top: 10px;
+    right: 10px;
+  }
+
+  .nav-menu {
+    text-align: center;
+  }
+
+  .hero-section {
+    padding-top: 120px; /* prevent overlap from fixed navbar */
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
+
+/* === Responsive Fix for Navbar and Theme Toggle === */
+@media (max-width: 968px) {
+  .navbar {
+    z-index: 1200; /* keep navbar above theme toggle */
+  }
+
+  .theme-toggle {
+    position: fixed; /* stay visible during scroll */
+    top: 15px;
+    right: 60px; /* align beside hamburger menu */
+    width: 45px;
+    height: 45px;
+    z-index: 1300;
+    background: var(--card-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+
+  .theme-toggle i {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+  }
+
+  .theme-toggle:hover {
+    transform: scale(1.1);
+  }
+
+  .nav-toggle {
+    position: fixed;
+    top: 15px;
+    right: 10px;
+    z-index: 1300;
+  }
+
+  .nav-container {
+    position: relative;
+  }
+
+  /* prevent overlap with mobile menu */
+  .nav-menu {
+    margin-top: 65px;
+  }
+
+  [data-theme="dark"] .theme-toggle {
+    background: var(--card-bg);
+    border: 2px solid var(--border-color);
+  }
+}
+
+/* Extra small screen adjustments */
+@media (max-width: 640px) {
+  .theme-toggle {
+    top: 12px;
+    right: 55px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .nav-toggle {
+    top: 12px;
+    right: 10px;
+  }
+
+  .nav-menu {
+    text-align: center;
+  }
+
+  .hero-section {
+    padding-top: 120px; /* avoid overlap with fixed buttons */
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-buttons,
+  .social-links {
+    justify-content: center;
+  }
+}
