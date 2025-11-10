@@ -181,8 +181,7 @@ function initProjectModals() {
         project1: {
             title: 'Face and Motion Detection System',
             date: 'Jan 2024 - Present',
-            description: 'A comprehensive computer vision project that implements real-time face and motion detection in video streams.',
-            fullDescription: `This advanced computer vision system leverages machine learning algorithms to detect human faces and motion in real-time video streams. The project demonstrates expertise in computer vision, real-time processing, and optimization techniques.`,
+            fullDescription: `A comprehensive computer vision project that implements real-time face and motion detection in video streams. This advanced computer vision system leverages machine learning algorithms to detect human faces and motion in real-time video streams. The project demonstrates expertise in computer vision, real-time processing, and optimization techniques.`,
             features: [
                 'Real-time face detection using Haar cascades',
                 'Motion detection using background subtraction techniques',
@@ -197,8 +196,7 @@ function initProjectModals() {
         project2: {
             title: 'Weather Forecast Web App',
             date: 'Jan 2025 - Present',
-            description: 'A responsive web application providing accurate weather forecasts using real-time API data.',
-            fullDescription: `A modern, user-friendly weather forecasting application that fetches real-time weather data from OpenWeatherMap API and displays comprehensive 5-day forecasts with an intuitive interface.`,
+            fullDescription: `A responsive web application providing accurate weather forecasts using real-time API data. A modern, user-friendly weather forecasting application that fetches real-time weather data from OpenWeatherMap API and displays comprehensive 5-day forecasts with an intuitive interface.`,
             features: [
                 'Real-time weather data fetching from OpenWeatherMap API',
                 'Interactive 5-day weather forecast',
@@ -213,8 +211,7 @@ function initProjectModals() {
         project3: {
             title: 'SkillSwap - Skill Exchange Platform',
             date: 'Dec 2024 - Present',
-            description: 'An innovative platform connecting people to exchange skills and learn from each other.',
-            fullDescription: `SkillSwap is a full-stack web platform that uses AI to match users based on their skills and learning interests, creating a community-driven skill exchange ecosystem.`,
+            fullDescription: `An innovative platform connecting people to exchange skills and learn from each other. SkillSwap is a full-stack web platform that uses AI to match users based on their skills and learning interests, creating a community-driven skill exchange ecosystem.`,
             features: [
                 'AI-powered intelligent skill matching',
                 'User profiles with skill listings',
@@ -229,8 +226,7 @@ function initProjectModals() {
         project4: {
             title: 'Image Captioning System',
             date: 'Jan 2023 - Present',
-            description: 'A deep learning system that automatically generates descriptive captions for images.',
-            fullDescription: `An end-to-end deep learning solution that combines computer vision and natural language processing to generate accurate, human-like captions for images. The system uses state-of-the-art CNN and LSTM architectures.`,
+            fullDescription: `A deep learning system that automatically generates descriptive captions for images. An end-to-end deep learning solution that combines computer vision and natural language processing to generate accurate, human-like captions for images. The system uses state-of-the-art CNN and LSTM architectures.`,
             features: [
                 'CNN-based image feature extraction',
                 'LSTM networks for caption generation',
