@@ -1971,3 +1971,72 @@ html, body {
 .cert-card--viewable {
     cursor: pointer;
 }
+
+/* ---- Résumé download affordances ---- */
+
+.btn-ghost {
+    background: transparent;
+    color: var(--text-light);
+    border: 2px solid var(--border-color);
+}
+
+.btn-ghost:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.nav-resume {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: var(--gradient-1);
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    border-radius: 50px;
+    box-shadow: 0 4px 14px rgba(99, 102, 241, 0.3);
+    transition: all 0.25s ease;
+}
+
+.nav-resume:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.45);
+}
+
+.nav-resume i {
+    font-size: 0.8em;
+}
+
+.contact-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+@media (max-width: 968px) {
+    .nav-menu .nav-resume {
+        justify-content: center;
+        width: 100%;
+        margin-top: 0.25rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .contact-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .contact-actions .btn {
+        justify-content: center;
+    }
+
+    .hero-buttons .btn {
+        justify-content: center;
+        width: 100%;
+    }
+}
