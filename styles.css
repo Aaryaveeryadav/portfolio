@@ -663,6 +663,7 @@ body {
 .project-btn {
     background: white;
     color: var(--primary-color);
+    text-decoration: none;
     padding: 12px 24px;
     border-radius: 50px;
     border: none;
@@ -1558,4 +1559,415 @@ html, body {
   .hero-section {
     padding-top: 130px;
   }
+}
+
+/* ==========================================================================
+   Resume-aligned refresh (2025): hero badge, skills grid, project cards,
+   modal, certifications grid, contact card, footer links
+   ========================================================================== */
+
+/* ---- Hero ---- */
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-light);
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 6px 14px;
+    border-radius: 50px;
+    margin-bottom: 1.25rem;
+    box-shadow: var(--shadow);
+}
+
+.hero-badge i {
+    color: var(--primary-color);
+}
+
+/* ---- Section subtitle ---- */
+.section-subtitle {
+    text-align: center;
+    color: var(--text-light);
+    max-width: 640px;
+    margin: -2rem auto 3rem;
+    font-size: 1rem;
+}
+
+/* ---- Skills: two columns of categories ---- */
+@media (min-width: 641px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.skill-tag {
+    font-size: 0.82rem;
+    padding: 6px 13px;
+}
+
+/* ---- Project cards ---- */
+.section-title + .projects-grid {
+    margin-top: 0;
+}
+
+.projects-grid {
+    gap: 2.25rem;
+}
+
+.project-header {
+    flex-wrap: wrap;
+    gap: 0.25rem 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.project-header h3 {
+    font-size: 1.15rem;
+    line-height: 1.35;
+    margin-bottom: 0;
+}
+
+.project-date {
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    padding: 2px 10px;
+    border-radius: 50px;
+}
+
+.project-description {
+    font-size: 0.95rem;
+    margin-bottom: 1.1rem;
+}
+
+.project-tags {
+    margin-bottom: 1.25rem;
+}
+
+.tag {
+    font-size: 0.78rem;
+    padding: 4px 11px;
+}
+
+.project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    align-self: flex-start;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    font-family: inherit;
+    font-size: 0.83rem;
+    font-weight: 500;
+    padding: 7px 14px;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.project-link:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.project-link i {
+    color: var(--primary-color);
+    transition: color 0.25s ease;
+}
+
+.project-link:hover i {
+    color: #fff;
+}
+
+/* Gradient thumbnails for projects without screenshots */
+.project-image--gradient {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grad-1 {
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 55%, #ec4899 100%);
+}
+
+.grad-2 {
+    background: linear-gradient(135deg, #0f766e 0%, #0ea5e9 60%, #6366f1 100%);
+}
+
+.project-thumb-icon {
+    font-size: 4.5rem;
+    color: rgba(255, 255, 255, 0.9);
+    filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.25));
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-thumb-icon {
+    transform: scale(1.08) rotate(-3deg);
+}
+
+.project-badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255, 255, 255, 0.95);
+    color: #4f46e5;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 50px;
+    z-index: 2;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.projects-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+/* ---- Modal content ---- */
+.modal-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.75rem;
+    line-height: 1.25;
+    margin: 0 2.5rem 0.5rem 0;
+    color: var(--text-color);
+}
+
+.modal-meta {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 1.25rem;
+}
+
+.modal-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.modal-links .project-link {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+}
+
+.modal-links .project-link i {
+    color: #fff;
+}
+
+.modal-block {
+    margin-bottom: 1.75rem;
+}
+
+.modal-block h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    color: var(--primary-color);
+}
+
+.modal-block p {
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+.modal-list {
+    list-style: none;
+    padding: 0;
+}
+
+.modal-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    padding: 0.45rem 0;
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+.modal-list li i {
+    color: var(--primary-color);
+    margin-top: 0.35rem;
+    flex-shrink: 0;
+}
+
+.modal-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* ---- Certifications ---- */
+.certificates-section {
+    background: var(--bg-color);
+}
+
+.cert-grid-wrap {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.cert-card .project-image {
+    height: 150px;
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+}
+
+.cert-card:nth-child(4n + 2) .project-image {
+    background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+}
+
+.cert-card:nth-child(4n + 3) .project-image {
+    background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%);
+}
+
+.cert-card:nth-child(4n + 4) .project-image {
+    background: linear-gradient(135deg, #14b8a6 0%, #0ea5e9 100%);
+}
+
+.cert-card .project-icon {
+    position: static;
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.92);
+    margin: 0;
+}
+
+.cert-card--plain .project-icon {
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+.cert-card .project-content {
+    padding: 1.35rem;
+}
+
+.cert-card .project-header h3 {
+    font-size: 1rem;
+}
+
+.cert-issuer {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 0.65rem;
+}
+
+.cert-card .project-description {
+    font-size: 0.88rem;
+    margin-bottom: 0;
+}
+
+/* ---- Contact ---- */
+.contact-card {
+    max-width: 720px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+    padding: 3rem 2rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.contact-lead {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    max-width: 520px;
+    margin: 0 auto 2rem;
+}
+
+.contact-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.contact-meta span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-meta i {
+    color: var(--primary-color);
+}
+
+.contact-social {
+    justify-content: center;
+}
+
+/* ---- Footer ---- */
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.25s ease;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+}
+
+@media (max-width: 640px) {
+    .hero-badge {
+        margin-top: 0.5rem;
+    }
+
+    .contact-card {
+        padding: 2.25rem 1.35rem;
+    }
+
+    .contact-card .btn {
+        font-size: 0.9rem;
+        padding: 11px 20px;
+        word-break: break-all;
+    }
+
+    .modal-title {
+        font-size: 1.4rem;
+    }
+
+    .section-subtitle {
+        margin: -1.5rem auto 2.5rem;
+    }
+}
+
+.cert-card--viewable {
+    cursor: pointer;
 }

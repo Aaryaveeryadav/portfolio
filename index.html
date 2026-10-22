@@ -2,20 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="Aaryaveer Yadav - AI/ML Developer & Full-Stack Engineer Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aaryaveer Yadav — Computer Science (AI & ML) undergraduate and AI/ML developer. Building autonomous agents, computer vision systems, and full-stack web apps.">
+    <meta name="author" content="Aaryaveer Yadav">
+    <meta property="og:title" content="Aaryaveer Yadav | AI/ML Developer & Full-Stack Engineer">
+    <meta property="og:description" content="Portfolio of Aaryaveer Yadav — AI/ML, computer vision, generative AI and full-stack development.">
+    <meta property="og:type" content="website">
     <title>Aaryaveer Yadav | AI/ML Developer Portfolio</title>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -32,7 +36,7 @@
             <a href="#home" class="nav-logo">
                 <span class="logo-text">AY</span>
             </a>
-            <button class="nav-toggle" id="navToggle">
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -42,6 +46,8 @@
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#certificates" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -50,6 +56,7 @@
         <div class="particles-container" id="particles"></div>
         <div class="hero-content">
             <div class="hero-text" data-aos="fade-up">
+                <span class="hero-badge"><i class="fas fa-location-dot"></i> Bhopal, India</span>
                 <h1 class="hero-title">
                     Hi, I'm <span class="gradient-text">Aaryaveer Yadav</span>
                 </h1>
@@ -57,7 +64,7 @@
                     <span class="typing-text"></span>
                 </p>
                 <p class="hero-description">
-                    AI/ML Developer | Full-Stack Engineer | Data Science Enthusiast
+                    Computer Science (AI &amp; ML) undergraduate building autonomous agents, computer vision systems and full-stack web apps.
                 </p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">
@@ -70,13 +77,16 @@
                     </a>
                 </div>
                 <div class="social-links">
-                    <a href="https://github.com/Aaryaveeryadav" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <a href="https://github.com/Aaryaveeryadav" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/aaryaveer-yadav-6149712b1/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/aaryaveer-yadav-6149712b1" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="mailto:aaryaveeryadav2005@gmail.com" aria-label="Email">
+                    <a href="https://leetcode.com/u/aaryaveer_19/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode" title="LeetCode">
+                        <i class="fas fa-code"></i>
+                    </a>
+                    <a href="mailto:aaryaveeryadav2005@gmail.com" aria-label="Email" title="Email">
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
@@ -106,22 +116,33 @@
             <div class="about-content">
                 <div class="about-text" data-aos="fade-right">
                     <p class="about-description">
-                        A highly motivated and technically skilled individual with hands-on experience in <strong>Artificial Intelligence, Data Science, and Full-Stack Web Development</strong>. I'm passionate about building intelligent systems that solve real-world problems.
+                        Motivated and detail-oriented <strong>Computer Science (AI &amp; ML)</strong> undergraduate with
+                        expertise in <strong>Artificial Intelligence, Machine Learning, Data Analytics and Full-Stack Web
+                        Development</strong>. I like turning messy real-world problems into working, measurable software.
                     </p>
                     <p class="about-description">
-                        Currently pursuing a <strong>Professional Certification Program in AI and Data Science at DRISHTI CPS, IIT Indore</strong>, while completing my B.Tech in Computer Science (AI & ML) at VIT Bhopal University. I combine academic excellence with practical experience to create innovative solutions.
+                        I'm currently interning through the <strong>Professional Certification Program in AI and Data
+                        Science at DRISHTI CPS, IIT Indore</strong> while completing my B.Tech at VIT Bhopal University.
+                        Recent work spans a hierarchical <strong>autonomous coding agent</strong> with sandboxed execution
+                        and runtime-guided recovery, and a lightweight <strong>U-Net</strong> for brain tumour
+                        segmentation on FLAIR MRI scans.
+                    </p>
+                    <p class="about-description">
+                        Alongside research-style ML work, I build and ship products — weather apps, skill-exchange
+                        platforms and ML-powered tools — with a strong foundation in
+                        <strong>DSA, OOP, DBMS and Software Engineering</strong>.
                     </p>
                     <div class="about-stats">
                         <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
-                            <h3>4+</h3>
-                            <p>Projects Completed</p>
+                            <h3>5+</h3>
+                            <p>Projects Shipped</p>
                         </div>
                         <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
-                            <h3>10+</h3>
+                            <h3>20+</h3>
                             <p>Technologies</p>
                         </div>
                         <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
-                            <h3>3+</h3>
+                            <h3>7+</h3>
                             <p>Certifications</p>
                         </div>
                     </div>
@@ -130,39 +151,64 @@
                     <h3 class="skills-title">Technical Skills</h3>
                     <div class="skills-grid">
                         <div class="skill-category">
-                            <h4><i class="fas fa-code"></i> Programming</h4>
+                            <h4><i class="fas fa-code"></i> Languages</h4>
                             <div class="skill-tags">
                                 <span class="skill-tag">Python</span>
                                 <span class="skill-tag">C++</span>
-                                <span class="skill-tag">SQL</span>
                                 <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">SQL</span>
                             </div>
                         </div>
                         <div class="skill-category">
-                            <h4><i class="fas fa-brain"></i> AI/ML</h4>
+                            <h4><i class="fas fa-brain"></i> AI &amp; ML</h4>
                             <div class="skill-tags">
-                                <span class="skill-tag">TensorFlow</span>
                                 <span class="skill-tag">Machine Learning</span>
                                 <span class="skill-tag">Deep Learning</span>
+                                <span class="skill-tag">Computer Vision</span>
+                                <span class="skill-tag">TensorFlow</span>
                                 <span class="skill-tag">OpenCV</span>
+                                <span class="skill-tag">CNN</span>
+                                <span class="skill-tag">LSTM</span>
+                                <span class="skill-tag">Generative AI</span>
                             </div>
                         </div>
                         <div class="skill-category">
-                            <h4><i class="fas fa-laptop-code"></i> Web Development</h4>
+                            <h4><i class="fas fa-laptop-code"></i> Web</h4>
                             <div class="skill-tags">
                                 <span class="skill-tag">React.js</span>
-                                <span class="skill-tag">HTML/CSS</span>
+                                <span class="skill-tag">HTML5</span>
+                                <span class="skill-tag">CSS3</span>
                                 <span class="skill-tag">Flask</span>
-                                <span class="skill-tag">Figma</span>
+                                <span class="skill-tag">REST APIs</span>
                             </div>
                         </div>
                         <div class="skill-category">
-                            <h4><i class="fas fa-database"></i> Core Concepts</h4>
+                            <h4><i class="fas fa-database"></i> Databases</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">MySQL</span>
+                                <span class="skill-tag">SQLite</span>
+                                <span class="skill-tag">PostgreSQL</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4><i class="fas fa-cloud"></i> Cloud &amp; Tools</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">AWS Elastic Beanstalk</span>
+                                <span class="skill-tag">Docker</span>
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">GitHub</span>
+                                <span class="skill-tag">Power BI</span>
+                                <span class="skill-tag">FastAPI</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4><i class="fas fa-sitemap"></i> Core CS</h4>
                             <div class="skill-tags">
                                 <span class="skill-tag">DSA</span>
                                 <span class="skill-tag">OOP</span>
                                 <span class="skill-tag">DBMS</span>
-                                <span class="skill-tag">Networks</span>
+                                <span class="skill-tag">Computer Networks</span>
+                                <span class="skill-tag">Software Engineering</span>
                             </div>
                         </div>
                     </div>
@@ -171,91 +217,231 @@
         </div>
     </section>
 
-    
-<section id="projects" class="projects-section">
-    <div class="container">
-        <h2 class="section-title" data-aos="fade-up">
-            Featured <span class="gradient-text">Projects</span>
-        </h2>
-        <div class="projects-grid">
-            
-            <!-- Face and Motion Detection -->
-            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="project-image">
-                    <img src="assets/projects/face_detect.jpeg" alt="Face Detection Project" class="project-img">
-                    <div class="project-overlay">
-                        <button class="project-btn" onclick="openModal('project1')">
-                            <i class="fas fa-eye"></i> View Details
-                        </button>
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                Featured <span class="gradient-text">Projects</span>
+            </h2>
+            <p class="section-subtitle" data-aos="fade-up">
+                Research-driven ML systems and production web apps — tap a card for the full case study.
+            </p>
+            <div class="projects-grid">
+
+                <!-- ReRun – Autonomous AI Coding Agent -->
+                <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image project-image--gradient grad-1">
+                        <i class="fas fa-robot project-thumb-icon"></i>
+                        <span class="project-badge"><i class="fas fa-star"></i> Featured</span>
+                        <div class="project-overlay">
+                            <button class="project-btn" onclick="openModal('rerun')">
+                                <i class="fas fa-eye"></i> Case Study
+                            </button>
+                            <a href="https://github.com/Aaryaveeryadav/ReRun" target="_blank" rel="noopener noreferrer" class="project-btn">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
                     </div>
-                    <div class="project-icon"><i class="fas fa-video"></i></div>
-                </div>
-                <div class="project-content">
-                    <h3>Face & Motion Detection System</h3>
-                </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>ReRun — Autonomous AI Coding Agent</h3>
+                            <span class="project-date">2025</span>
+                        </div>
+                        <p class="project-description">
+                            A hierarchical agent system that plans a task, writes Python code, runs it in a sandbox,
+                            diagnoses failures and repairs itself until the task is actually complete.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="project-link" onclick="openModal('rerun')">
+                                <i class="fas fa-circle-info"></i> Details
+                            </button>
+                            <a class="project-link" href="https://github.com/Aaryaveeryadav/ReRun" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> Source
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Brain Tumour MRI Segmentation -->
+                <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image project-image--gradient grad-2">
+                        <i class="fas fa-brain project-thumb-icon"></i>
+                        <div class="project-overlay">
+                            <button class="project-btn" onclick="openModal('tumor')">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Brain Tumour MRI Segmentation</h3>
+                            <span class="project-date">2025</span>
+                        </div>
+                        <p class="project-description">
+                            Lightweight U-Net that segments tumour regions in FLAIR brain MRI — 0.40 validation Dice
+                            and 0.32 IoU, vs 0.066 Dice for a classical image-processing baseline.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">TensorFlow/Keras</span>
+                            <span class="tag">U-Net</span>
+                            <span class="tag">OpenCV</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="project-link" onclick="openModal('tumor')">
+                                <i class="fas fa-circle-info"></i> Details
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Face and Motion Detection -->
+                <article class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="assets/projects/face_detect.jpeg" alt="Face and motion detection system" class="project-img">
+                        <div class="project-overlay">
+                            <button class="project-btn" onclick="openModal('face')">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                            <a href="https://face-detector-eight.vercel.app" target="_blank" rel="noopener noreferrer" class="project-btn">
+                                <i class="fas fa-external-link-alt"></i> Live
+                            </a>
+                        </div>
+                        <div class="project-icon"><i class="fas fa-video"></i></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Face &amp; Motion Detection System</h3>
+                            <span class="project-date">2025</span>
+                        </div>
+                        <p class="project-description">
+                            Real-time detection of human faces and motion in live video streams using Haar cascades
+                            and background subtraction, optimised for camera feeds.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">OpenCV</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="project-link" onclick="openModal('face')">
+                                <i class="fas fa-circle-info"></i> Details
+                            </button>
+                            <a class="project-link" href="https://github.com/Aaryaveeryadav/Face_detector" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> Source
+                            </a>
+                            <a class="project-link" href="https://face-detector-eight.vercel.app" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Live
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Weather Forecast Web App -->
+                <article class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <img src="assets/projects/weather forecast.png" alt="Weather forecast web app" class="project-img">
+                        <div class="project-overlay">
+                            <button class="project-btn" onclick="openModal('weather')">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                            <a href="https://weather-forecast-jade.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-btn">
+                                <i class="fas fa-external-link-alt"></i> Live
+                            </a>
+                        </div>
+                        <div class="project-icon"><i class="fas fa-cloud-sun"></i></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Weather Forecast Web App</h3>
+                            <span class="project-date">2025</span>
+                        </div>
+                        <p class="project-description">
+                            Responsive weather app with real-time OpenWeatherMap data, location search and a dynamic
+                            5-day forecast UI.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">REST API</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="project-link" onclick="openModal('weather')">
+                                <i class="fas fa-circle-info"></i> Details
+                            </button>
+                            <a class="project-link" href="https://github.com/Aaryaveeryadav/Weather-Forecast" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> Source
+                            </a>
+                            <a class="project-link" href="https://weather-forecast-jade.vercel.app/" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Live
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- SkillSwap -->
+                <article class="project-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-image">
+                        <img src="assets/projects/skillswap.png" alt="SkillSwap skill exchange platform" class="project-img">
+                        <div class="project-overlay">
+                            <button class="project-btn" onclick="openModal('skillswap')">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                            <a href="https://skillswap-2hbq.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-btn">
+                                <i class="fas fa-external-link-alt"></i> Live
+                            </a>
+                        </div>
+                        <div class="project-icon"><i class="fas fa-exchange-alt"></i></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>SkillSwap — Skill Exchange Platform</h3>
+                            <span class="project-date">2024 – 2025</span>
+                        </div>
+                        <p class="project-description">
+                            Full-stack platform that matches people by the skills they can teach and want to learn,
+                            with profiles, search and exchange requests.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React.js</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Bolt AI</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="project-link" onclick="openModal('skillswap')">
+                                <i class="fas fa-circle-info"></i> Details
+                            </button>
+                            <a class="project-link" href="https://github.com/Aaryaveeryadav/SkillSwap_Project_Final" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> Source
+                            </a>
+                            <a class="project-link" href="https://skillswap-2hbq.vercel.app/" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Live
+                            </a>
+                        </div>
+                    </div>
+                </article>
             </div>
 
-            <!-- Weather Forecast Web App -->
-            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="project-image">
-                    <img src="assets/projects/weather forecast.png" alt="Weather Forecast App" class="project-img">
-                    <div class="project-overlay">
-                        <button class="project-btn" onclick="openModal('project2')">
-                            <i class="fas fa-eye"></i> View Details
-                        </button>
-                        <a href="https://weather-forecast-jade.vercel.app/" target="_blank" class="project-btn">
-                            <i class="fas fa-external-link-alt"></i> View Live
-                        </a>
-                    </div>
-                    <div class="project-icon"><i class="fas fa-cloud-sun"></i></div>
-                </div>
-                <div class="project-content">
-                    <h3>Weather Forecast Web App</h3>
-                </div>
-            </div>
-
-            <!-- SkillSwap Platform -->
-            <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                <div class="project-image">
-                    <img src="assets/projects/skillswap.png" alt="SkillSwap Platform" class="project-img">
-                    <div class="project-overlay">
-                        <button class="project-btn" onclick="openModal('project3')">
-                            <i class="fas fa-eye"></i> View Details
-                        </button>
-                        <a href="https://skillswap-2hbq.vercel.app/" target="_blank" class="project-btn">
-                            <i class="fas fa-external-link-alt"></i> View Live
-                        </a>
-                    </div>
-                    <div class="project-icon"><i class="fas fa-exchange-alt"></i></div>
-                </div>
-                <div class="project-content">
-                    <h3>SkillSwap Platform</h3>
-                </div>
-            </div>
-
-            <!-- Image Captioning System -->
-            <div class="project-card" data-aos="fade-up" data-aos-delay="400">
-                <div class="project-image">
-                    <img src="assets/projects/image-captioning-deep-learning.jpg" alt="Image Captioning System" class="project-img">
-                    <div class="project-overlay">
-                        <button class="project-btn" onclick="openModal('project4')">
-                            <i class="fas fa-eye"></i> View Details
-                        </button>
-                    </div>
-                    <div class="project-icon"><i class="fas fa-image"></i></div>
-                </div>
-                <div class="project-content">
-                    <h3>Image Captioning System</h3>
-                </div>
+            <div class="projects-more" data-aos="fade-up">
+                <a href="https://github.com/Aaryaveeryadav?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    More on GitHub
+                    <i class="fab fa-github"></i>
+                </a>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
-    <div id="projectModal" class="modal">
+    <div id="projectModal" class="modal" role="dialog" aria-modal="true" aria-label="Project details">
         <div class="modal-content">
-            <button class="modal-close" onclick="closeModal()">
+            <button class="modal-close" onclick="closeModal()" aria-label="Close">
                 <i class="fas fa-times"></i>
             </button>
             <div id="modalBody"></div>
@@ -265,7 +451,7 @@
     <section id="experience" class="experience-section">
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">
-                Experience & <span class="gradient-text">Education</span>
+                Experience &amp; <span class="gradient-text">Education</span>
             </h2>
             <div class="timeline">
                 <div class="timeline-item" data-aos="fade-right">
@@ -273,14 +459,14 @@
                         <i class="fas fa-briefcase"></i>
                     </div>
                     <div class="timeline-content">
-                        <span class="timeline-date">Jun 2025 - Present</span>
-                        <h3>Intern - AI and Data Science</h3>
+                        <span class="timeline-date">Jun 2025 – Present</span>
+                        <h3>Intern — AI &amp; Data Science</h3>
                         <h4>DRISHTI CPS, IIT Indore</h4>
                         <p>Professional Certification Program in AI and Data Science</p>
                         <ul>
-                            <li>Undergoing intensive training in Artificial Intelligence and Data Science</li>
-                            <li>Gaining hands-on experience with Machine Learning, Deep Learning, and Data Analytics</li>
-                            <li>Collaborating with research mentors on real-world problem-solving using Python and ML frameworks</li>
+                            <li>Undergoing intensive training and hands-on projects in Artificial Intelligence and Data Science</li>
+                            <li>Building real-world applications of Machine Learning, Deep Learning and Data Analytics</li>
+                            <li>Collaborating with research mentors and peers to solve domain-specific problems using Python and ML frameworks</li>
                         </ul>
                     </div>
                 </div>
@@ -290,13 +476,13 @@
                         <i class="fas fa-graduation-cap"></i>
                     </div>
                     <div class="timeline-content">
-                        <span class="timeline-date">Aug 2023 - May 2027</span>
-                        <h3>B.Tech in Computer Science (AI & ML)</h3>
-                        <h4>VIT Bhopal University</h4>
+                        <span class="timeline-date">Oct 2023 – 2027 (Expected)</span>
+                        <h3>B.Tech in Computer Science (AI &amp; ML)</h3>
+                        <h4>Vellore Institute of Technology, Bhopal University</h4>
                         <p>Sehore, Madhya Pradesh</p>
                         <ul>
                             <li>Specialization in Artificial Intelligence and Machine Learning</li>
-                            <li>Strong foundation in DSA, OOP, DBMS, and Computer Networks</li>
+                            <li>Strong foundation in Data Structures &amp; Algorithms, OOP, DBMS and Software Engineering</li>
                             <li>Active participation in coding competitions and technical events</li>
                         </ul>
                     </div>
@@ -308,100 +494,234 @@
                     </div>
                     <div class="timeline-content">
                         <span class="timeline-date">Graduated May 2023</span>
-                        <h3>12th Standard - 86.6%</h3>
-                        <h4>St Paul's Convent Sr. Sec School</h4>
+                        <h3>12th Standard — 86.6%</h3>
+                        <h4>St Paul's Convent Sr. Sec. School</h4>
                         <p>Ujjain, Madhya Pradesh</p>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <section id="certificates" class="projects-section">
-    <div class="container">
-        <h2 class="section-title" data-aos="fade-up">
-            Completed <span class="gradient-text">Certificates</span>
-        </h2>
-        <div class="projects-grid">
-            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="project-image">
-                    <div class="project-overlay">
-                        <button class="project-btn" onclick="openCertificate('sql')">
-                            <i class="fas fa-eye"></i> View Certificate
-                        </button>
-                    </div>
-                    <div class="project-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <div class="project-header">
-                        <h3>Microsoft SQL Certification</h3>
-                        <span class="project-date">Issued by Intellipaat, Aug 2025</span>
-                    </div>
-                    <p class="project-description">
-                        Completed Microsoft SQL Training covering advanced database management concepts and SQL optimization.
-                    </p>
-                </div>
-            </div>
+    <section id="certificates" class="projects-section certificates-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                Certifications &amp; <span class="gradient-text">Courses</span>
+            </h2>
+            <p class="section-subtitle" data-aos="fade-up">
+                7+ certifications across AI/ML, computer vision, cloud and databases.
+            </p>
+            <div class="projects-grid cert-grid-wrap">
 
-            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="project-image">
-                    <div class="project-overlay">
-                        <button class="project-btn" onclick="openCertificate('ai_ml')">
-                            <i class="fas fa-eye"></i> View Certificate
-                        </button>
+                <div class="project-card cert-card cert-card--viewable" onclick="openCertificate('sql')" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image cert-image">
+                        <div class="project-overlay">
+                            <button class="project-btn" onclick="openCertificate('sql')">
+                                <i class="fas fa-eye"></i> View Certificate
+                            </button>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
                     </div>
-                    <div class="project-icon">
-                        <i class="fas fa-brain"></i>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Microsoft SQL Certification</h3>
+                            <span class="project-date">Aug 2025</span>
+                        </div>
+                        <p class="cert-issuer"><i class="fas fa-certificate"></i> Intellipaat</p>
+                        <p class="project-description">
+                            Advanced database management and SQL query optimisation.
+                        </p>
                     </div>
                 </div>
-                <div class="project-content">
-                    <div class="project-header">
-                        <h3>Fundamentals in AI & ML</h3>
-                        <span class="project-date">Issued by Vityarth</span>
-                    </div>
-                    <p class="project-description">
-                        Completed foundational concepts in Artificial Intelligence and Machine Learning, including supervised and unsupervised learning.
-                    </p>
-                </div>
-            </div>
 
-            <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                <div class="project-image">
-                    <div class="project-overlay">
-                        <button class="project-btn" onclick="openCertificate('python')">
-                            <i class="fas fa-eye"></i> View Certificate
-                        </button>
+                <div class="project-card cert-card cert-card--viewable" onclick="openCertificate('ai_ml')" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image cert-image">
+                        <div class="project-overlay">
+                            <button class="project-btn" onclick="openCertificate('ai_ml')">
+                                <i class="fas fa-eye"></i> View Certificate
+                            </button>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
                     </div>
-                    <div class="project-icon">
-                        <i class="fab fa-python"></i>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Fundamentals in AI &amp; ML</h3>
+                        </div>
+                        <p class="cert-issuer"><i class="fas fa-certificate"></i> Vityarth</p>
+                        <p class="project-description">
+                            Supervised and unsupervised learning, model evaluation and core ML concepts.
+                        </p>
                     </div>
                 </div>
-                <div class="project-content">
-                    <div class="project-header">
-                        <h3>Python Essentials</h3>
-                        <span class="project-date">Issued by Vityarth</span>
+
+                <div class="project-card cert-card cert-card--viewable" onclick="openCertificate('python')" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image cert-image">
+                        <div class="project-overlay">
+                            <button class="project-btn" onclick="openCertificate('python')">
+                                <i class="fas fa-eye"></i> View Certificate
+                            </button>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
                     </div>
-                    <p class="project-description">
-                        Gained practical knowledge of Python programming and problem-solving through applied exercises.
-                    </p>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Python Essentials</h3>
+                        </div>
+                        <p class="cert-issuer"><i class="fas fa-certificate"></i> Vityarth</p>
+                        <p class="project-description">
+                            Practical Python programming, data structures and problem solving.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-card cert-card cert-card--plain" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image cert-image">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Applied Machine Learning in Python</h3>
+                        </div>
+                        <p class="cert-issuer"><i class="fas fa-certificate"></i> Online Certification</p>
+                        <p class="project-description">
+                            Applied ML workflows in Python — feature engineering, training and evaluation.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-card cert-card cert-card--plain" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-image cert-image">
+                        <div class="project-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Computer Vision</h3>
+                        </div>
+                        <p class="cert-issuer"><i class="fas fa-certificate"></i> Online Certification</p>
+                        <p class="project-description">
+                            Image processing, convolutional networks and vision-based applications.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-card cert-card cert-card--plain" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-image cert-image">
+                        <div class="project-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Cloud Computing</h3>
+                        </div>
+                        <p class="cert-issuer"><i class="fas fa-certificate"></i> Online Certification</p>
+                        <p class="project-description">
+                            Cloud service models, deployment and scalable application hosting.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-card cert-card cert-card--plain" data-aos="fade-up" data-aos-delay="700">
+                    <div class="project-image cert-image">
+                        <div class="project-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Introduction to Internet of Things</h3>
+                            <span class="project-date">Top 5% Elite</span>
+                        </div>
+                        <p class="cert-issuer"><i class="fas fa-certificate"></i> NPTEL</p>
+                        <p class="project-description">
+                            IoT architecture, embedded sensing and connected-device protocols.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-card cert-card cert-card--plain" data-aos="fade-up" data-aos-delay="800">
+                    <div class="project-image cert-image">
+                        <div class="project-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Professional Certification in AI &amp; Data Science</h3>
+                            <span class="project-date">In progress</span>
+                        </div>
+                        <p class="cert-issuer"><i class="fas fa-certificate"></i> DRISHTI CPS, IIT Indore</p>
+                        <p class="project-description">
+                            Intensive AI, ML, deep learning and data analytics program with applied projects.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                Let's <span class="gradient-text">Connect</span>
+            </h2>
+            <div class="contact-card" data-aos="fade-up">
+                <p class="contact-lead">
+                    I'm open to AI/ML internships, research collaborations and full-stack projects.
+                    The fastest way to reach me is email.
+                </p>
+                <a href="mailto:aaryaveeryadav2005@gmail.com" class="btn btn-primary">
+                    aaryaveeryadav2005@gmail.com
+                    <i class="fas fa-paper-plane"></i>
+                </a>
+                <div class="contact-meta">
+                    <span><i class="fas fa-location-dot"></i> Bhopal, India</span>
+                    <span><i class="fas fa-graduation-cap"></i> VIT Bhopal · B.Tech CSE (AI &amp; ML)</span>
+                </div>
+                <div class="social-links contact-social">
+                    <a href="https://github.com/Aaryaveeryadav" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/aaryaveer-yadav-6149712b1" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://leetcode.com/u/aaryaveer_19/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode" title="LeetCode">
+                        <i class="fas fa-code"></i>
+                    </a>
+                    <a href="mailto:aaryaveeryadav2005@gmail.com" aria-label="Email" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#certificates">Certifications</a>
+                    <a href="#contact">Contact</a>
+                </div>
                 <p>&copy; 2025 Aaryaveer Yadav. All rights reserved.</p>
-                <p>Designed & Built with <i class="fas fa-heart"></i> by Aaryaveer</p>
+                <p>Designed &amp; built with <i class="fas fa-heart"></i> by Aaryaveer</p>
             </div>
         </div>
-
-
-</footer>
+    </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
